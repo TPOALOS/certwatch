@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "certwatch"
+version = "1.1.0"
+description = "TLS certificate expiry checker for your own hosts: parallel, JSON output with issuer and SANs, cron-friendly."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "TPOALOS"}]
+keywords = ["tls", "ssl", "certificate-expiry", "monitoring"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+
+[project.urls]
+Homepage = "https://github.com/TPOALOS/certwatch"
+
+[project.scripts]
+certwatch = "certwatch:main"
+
+[tool.setuptools]
+py-modules = ["certwatch"]
