@@ -136,7 +136,7 @@ class InspectTests(unittest.TestCase):
         self.assertEqual(certwatch._name(((("organizationName", "Org"),),)), "Org")
 
 
-class CliTests(unittest.TestCase):
+class NewCliTests(unittest.TestCase):
     FUTURE = "Jan  1 00:00:00 2099 GMT"
     PAST = "Jan  1 00:00:00 2001 GMT"
 
